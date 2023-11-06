@@ -4,15 +4,15 @@ using UnityEngine;
 
 public class CameraFollower : MonoBehaviour
 {
-    // [SerializeField]
-    // Transform PlayerObject;
+
     public Transform Target;
 
-    public float SmoothSpeed = 0.125f;
+    public float SmoothSpeed = 0.250f;
 
     public Vector3 Offset;
     void FollowPlayer()
     {
+        Target = GameObject.Find("CarHolder").transform;
         // transform.position = PlayerObject.transform.position + new Vector3(5, 4, 0);
         Vector3 DesiredPose = Target.position + Offset;
         Vector3 SmoothedPosition =

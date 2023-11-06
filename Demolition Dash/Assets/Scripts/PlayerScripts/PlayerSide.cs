@@ -53,7 +53,7 @@ public class PlayerSide : MonoBehaviour
             Vector3 z =
                 new Vector3(transform.position.x,
                     transform.position.y,
-                 RoadState * 1.5f);
+                 RoadState * 1.75f);
 
             //-------------------------------------------
             transform.position =
